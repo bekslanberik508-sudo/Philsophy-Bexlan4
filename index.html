@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Философия тарауы</title>
 
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #0ff;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .student-box, .video-box {
+            border: 2px solid #0ff;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #0ff;
+        }
+
+        a {
+            color: #0ff;
+            font-size: 18px;
+            display: block;
+            margin-top: 8px;
+            text-decoration: none;
+            text-shadow: 0 0 10px #0ff;
+            cursor: pointer;
+        }
+
+        iframe {
+            width: 100%;
+            height: 900px;
+            border: 2px solid #0ff;
+            margin-top: 10px;
+            border-radius: 10px;
+            background: #111;
+        }
+
+        video {
+            width: 100%;
+            margin-top: 20px;
+            border: 2px solid #0ff;
+            border-radius: 10px;
+        }
+    </style>
+
+<script>
+function openDocFor(id, path) {
+
+    // Полный путь к файлу
+    const origin = window.location.origin;
+    const repoPath = window.location.pathname; // например /my-site/
+
+    const url = origin + repoPath + path;
+
+    // Открываем PDF через Google Docs Viewer — работает на телефонах!
+    document.getElementById(id).src =
+        "https://docs.google.com/gview?embedded=true&url=" + url;
+}
+</script>
+
+</head>
+<body>
+
+    <h1>Топ: 05-057-24-02</h1>
+    <h2>Студенттер Серікболқызы Аяжан • Торебек Әселай • Серикпаева Тоғжан • Жақсылық Ерали </h2>
+
+    <div class="container">
+
+        <div class="student-box">
+            <h3>📘 Серікболқызы Аяжан мақала</h3>
+            <a onclick="openDocFor('ayazhan', 'bexlan.pdf')">Құжатты ашу</a>
+            <iframe id="ayazhan"></iframe>
+        </div>
+
+        <div class="student-box">
+            <h3>📘 Торебек Әселай мақала</h3>
+            <a onclick="openDocFor('aselay', 'Gaziz_Batyrzhan.pdf')">Құжатты ашу</a>
+            <iframe id="aselay"></iframe>
+        </div>
+
+        <div class="student-box">
+            <h3>📘 Серикпаева Тоғжан мақала</h3>
+            <a onclick="openDocFor('togzhan', 'Torekhan_Yasmin.pdf')">Құжатты ашу</a>
+            <iframe id="togzhan"></iframe>
+        </div>
+
+        <div class="student-box">
+            <h3>📘 Жақсылық Ерали мақала</h3>
+            <a onclick="openDocFor('eraly', 'alina.pdf')">Құжатты ашу</a>
+            <iframe id="eraly"></iframe>
+        </div>
+
+        <div class="video-box">
+            <h2>🎬 Видеофайлдар</h2>
+
+            <video controls>
+                <source src="WhatsApp Video 2025-11-19 at 19.49.15.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="WhatsApp Video 2025-11-25 at 23.38.39.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>
